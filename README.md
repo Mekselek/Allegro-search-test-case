@@ -29,7 +29,7 @@ Expected results:\
 User can properly go through all steps and search for it's target
 Exported png file with first three auctions\
 ### Output image:
-![Output image from allegro]([(https://ibb.co/0tS1BM9)https://ibb.co/0tS1BM9])
+![Output image from allegro](https://ibb.co/0tS1BM9)
 
 
 
