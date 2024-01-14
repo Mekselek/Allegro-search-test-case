@@ -37,7 +37,7 @@ public class AllegroSearch extends BaseTest{
         File screenshot = screen.getScreenshotAs(OutputType.FILE);
         try {
 
-            move(screenshot, new File("src\\main\\resources\\Screenshots\\photo.png"));
+            move(screenshot, new File("src\\test\\java\\Screenshots\\photo.png"));
         }catch(IOException e){
             e.printStackTrace();
         }
