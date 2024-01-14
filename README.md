@@ -27,7 +27,7 @@ Test steps:\
 
 Expected results:\
 User can properly go through all steps and search for it's target
-Exported png file with first three auctions\
+Exported png file with first three auctions
 ### Output image:
 ![Output image from allegro](src/test/java/Screenshots/photo.png)
 
