@@ -23,6 +23,7 @@ public class AllegroSearch extends BaseTest {
 	public void googleAcceptAndSearch() {
 		String searchedGoogleWord = "Allegro";
 		String searchedAllegroWord = "Iphone 15 Pro";
+		String pathLocation = "src\\test\\java\\Screenshots\\photo.png";
 
 
 		GoogleMainPage googlePage = new GoogleMainPage(driver);
@@ -42,7 +43,7 @@ public class AllegroSearch extends BaseTest {
 		File screenshot = screen.getScreenshotAs(OutputType.FILE);
 
 		try {
-			move(screenshot, new File("src\\test\\java\\Screenshots\\photo.png"));
+			move(screenshot, new File(pathLocation));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

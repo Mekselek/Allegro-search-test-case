@@ -13,7 +13,6 @@ public class AllegroMainPage {
 	private WebElement cookiesPopupAcceptButton;
 	@FindBy(css = "button[data-testid='reject_home_view_action']")
 	private WebElement cookiesPopupDeclineButton;
-
 	@FindBy(css = "button[data-testid='manage_home_view_action']")
 	private WebElement cookiesChangeOptionsButton;
 	@FindBy(css = "input[role='combobox']")
