@@ -13,11 +13,12 @@ public class AllegroAuctionsPage {
     private WebElement scrollPoint;
 
 
-    public AllegroAuctionsPage(WebDriver driver){
+    public AllegroAuctionsPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    public void scrollTo(){
+
+    public void scrollTo() {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", scrollPoint);
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, -100);");
 

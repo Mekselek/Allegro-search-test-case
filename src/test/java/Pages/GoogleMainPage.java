@@ -13,12 +13,12 @@ public class GoogleMainPage {
     private WebElement cookiesPopup;
     @FindBy(id = "L2AGLb")
     private WebElement cookiesPopupAcceptButton;
-@FindBy(id = "W0wltc")
+    @FindBy(id = "W0wltc")
     private WebElement cookiesPopupDeclineButton;
-@FindBy(name = "q")
+    @FindBy(name = "q")
     private WebElement searchInputBar;
-@FindBy(css = "a[href='https://allegro.pl/']")
-private WebElement allegroHref;
+    @FindBy(css = "a[href='https://allegro.pl/']")
+    private WebElement allegroHref;
 
 
     public GoogleMainPage(WebDriver driver) {
@@ -26,16 +26,17 @@ private WebElement allegroHref;
     }
 
 
-    public void acceptCookies(){
+    public void acceptCookies() {
         cookiesPopupAcceptButton.click();
 
     }
 
-    public void searchGoogle(String keyWord){
+    public void searchGoogle(String keyWord) {
         searchInputBar.sendKeys(keyWord);
         searchInputBar.sendKeys(Keys.ENTER);
     }
-    public void openAllegro(){
+
+    public void openAllegro() {
         allegroHref.click();
     }
 

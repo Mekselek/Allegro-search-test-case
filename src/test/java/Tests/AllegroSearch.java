@@ -14,34 +14,34 @@ import java.util.List;
 
 import static com.google.common.io.Files.move;
 
-public class AllegroSearch extends BaseTest{
+public class AllegroSearch extends BaseTest {
 
-    List<String> itemsTitle;
-    @Test
-    public void googleAcceptAndSearch(){
-        GoogleMainPage googlePage = new GoogleMainPage(driver);
-        googlePage.acceptCookies();
-        googlePage.searchGoogle("Allegro");
-        googlePage.openAllegro();
-    }
-    @AfterTest
-    public void Allegro(){
-        AllegroMainPage allegroPage = new AllegroMainPage(driver);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-        allegroPage.acceptCookies();
-        allegroPage.searchItem("Iphone 15 Pro");
-        AllegroAuctionsPage allegroAuctionsPage = new AllegroAuctionsPage(driver);
-        allegroAuctionsPage.scrollTo();
+	List<String> itemsTitle;
 
-        var screen = (TakesScreenshot)driver;
-        File screenshot = screen.getScreenshotAs(OutputType.FILE);
-        try {
+	@Test
+	public void googleAcceptAndSearch() {
 
-            move(screenshot, new File("src\\test\\java\\Screenshots\\photo.png"));
-        }catch(IOException e){
-            e.printStackTrace();
-        }
+		GoogleMainPage googlePage = new GoogleMainPage(driver);
+		googlePage.acceptCookies();
+		googlePage.searchGoogle("Allegro");
+		googlePage.openAllegro();
+
+		AllegroMainPage allegroPage = new AllegroMainPage(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		allegroPage.acceptCookies();
+		allegroPage.searchItem("Iphone 15 Pro");
+		AllegroAuctionsPage allegroAuctionsPage = new AllegroAuctionsPage(driver);
+		allegroAuctionsPage.scrollTo();
+
+		var screen = (TakesScreenshot) driver;
+		File screenshot = screen.getScreenshotAs(OutputType.FILE);
+
+		try {
+			move(screenshot, new File("src\\test\\java\\Screenshots\\photo.png"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
 
-    }
+	}
 }
