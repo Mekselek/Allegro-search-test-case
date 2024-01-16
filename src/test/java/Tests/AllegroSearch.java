@@ -4,6 +4,7 @@ import Pages.AllegroAuctionsPage;
 import Pages.AllegroMainPage;
 import Pages.GoogleMainPage;
 import org.openqa.selenium.*;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
@@ -20,17 +21,21 @@ public class AllegroSearch extends BaseTest {
 
 	@Test
 	public void googleAcceptAndSearch() {
+		String searchedGoogleWord = "Allegro";
+		String searchedAllegroWord = "Iphone 15 Pro";
+
 
 		GoogleMainPage googlePage = new GoogleMainPage(driver);
 		googlePage.acceptCookies();
-		googlePage.searchGoogle("Allegro");
+		googlePage.searchGoogle(searchedGoogleWord);
 		googlePage.openAllegro();
 
 		AllegroMainPage allegroPage = new AllegroMainPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		allegroPage.acceptCookies();
-		allegroPage.searchItem("Iphone 15 Pro");
+		allegroPage.searchItem(searchedAllegroWord);
 		AllegroAuctionsPage allegroAuctionsPage = new AllegroAuctionsPage(driver);
+		allegroAuctionsPage.assertScrollPointText();
 		allegroAuctionsPage.scrollTo();
 
 		var screen = (TakesScreenshot) driver;
