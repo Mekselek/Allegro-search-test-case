@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c717828b-d5d0-4517-9687-be015e24b47c" name="Changes" comment="Changes in screenshot files">
+    <list default="true" id="c717828b-d5d0-4517-9687-be015e24b47c" name="Changes" comment="Deleted CaptchaChecker Page&#10;Deleted @Aftertest annotation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AllegroAuctionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AllegroAuctionsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AllegroBotCheckerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AllegroBotCheckerPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AllegroMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AllegroMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/GoogleMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/GoogleMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Screenshots/photo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Screenshots/photo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AllegroSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AllegroSearch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,18 +31,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "X:/Java Tutoriul/1st Try/Selenium/Allegro Search Test",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.externalDependencies"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;X:/Java Tutoriul/1st Try/Selenium/Allegro Search Test&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalDependencies&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="X:\Java Tutoriul\1st Try\Selenium\Allegro Search Test" />
@@ -79,7 +73,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705269938553</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Deleted CaptchaChecker Page&#10;Deleted @Aftertest annotation">
+      <option name="closed" value="true" />
+      <created>1705432836234</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705432836234</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +98,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Changes in screenshot files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in screenshot files" />
+    <MESSAGE value="Deleted CaptchaChecker Page&#10;Deleted @Aftertest annotation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted CaptchaChecker Page&#10;Deleted @Aftertest annotation" />
   </component>
 </project>
