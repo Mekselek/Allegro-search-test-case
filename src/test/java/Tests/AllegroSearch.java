@@ -35,9 +35,16 @@ public class AllegroSearch extends BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		allegroPage.acceptCookies();
 		allegroPage.searchItem(searchedAllegroWord);
+
 		AllegroAuctionsPage allegroAuctionsPage = new AllegroAuctionsPage(driver);
-		allegroAuctionsPage.assertScrollPointText();
-		allegroAuctionsPage.scrollTo();
+
+
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", allegroAuctionsPage.getScrollPoint());
+		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, -100);");
+
+		Assert.assertEquals(allegroAuctionsPage.getScrollPointText(), "Oferty promowane");
+
+
 
 		var screen = (TakesScreenshot) driver;
 		File screenshot = screen.getScreenshotAs(OutputType.FILE);
@@ -50,4 +57,6 @@ public class AllegroSearch extends BaseTest {
 
 
 	}
+
+
 }
